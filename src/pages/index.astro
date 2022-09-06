@@ -1,0 +1,158 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Banner from '../components/Banner.astro';
+import Message from '../components/Message.astro';
+import Card from '../components/Card.astro';
+import VidWrapper from '../components/VidWrapper.astro';
+
+// import { Image, Picture } from '@astrojs/image/components';
+---
+
+<Layout title="AlphaTree">
+	<main>
+		<center><h1><span class="text-gradient">360 516 8933</span></h1></center>
+		
+		<Banner />
+
+		<Message />
+
+		<ul role="list" class="link-card-grid">
+			<Card
+				href="/photo/photogallery"
+				title="Photo Gallery"
+				body="Photo's of work done in Kitsap, Mason and Pierce Counties."
+			/>
+			<Card
+				href="/videogallery"
+				title="Video Gallery"
+				body="Video's of work done in Kitsap, Mason and Pierce Counties."
+			/>
+		</ul>
+
+		<ul role="list" class="link-card-grid">
+			<li>
+				<a href="/vid/logdropvideopage">
+					<img class="w-60 max-w-xs mx-auto rounded-lg" src="logdrop_overlay.webp" />
+				</a>
+				
+			</li>
+			<li>
+				<a href="/vid/smalltopoutvidpage">
+					<img class="w-60 max-w-xs mx-auto rounded-lg" src="smallrigout_overlay.webp" />
+				</a>
+			</li>
+		</ul>
+
+		<ul role="list" class="link-card-grid">
+			<Card
+				href="/postreview"
+				title="Leave A Review"
+				body="Please tell use how we did."
+			/>
+			<Card
+				href="/estimate"
+				title="Get An Estimate"
+				body="We would  ❤️  for you to make an appointment for a free estimate."
+			/>
+		</ul>
+
+		<ul role="list" class="link-card-grid">
+			<div class="mx-auto block box-content h-72 w-9/12 p-4 border-2 border-red-800 mb-5 rounded-lg bg-sky-600 italic">
+				<p class="text-black">I’m excited to share my experience, they excepted the job when no one else would. We had
+					several local tree service companies come out and declined to remove them because the
+					risk and difficulty . We had 4 very risky tall fir trees that were hanging over our house ,
+					up against a fence which adjoined the Neighboring house blocked in by a shed and covered 
+					in Ivy vines the size of trees from the ground to the top! They showed up on time as planned 
+					and shortly after introductions the crew was geared up and climbing and cutting. We hung 
+					out with the crew during the whole process and had a great time learning, watching and 
+					laughing through the whole process. I did and will recommend this tree service company 
+					to anyone needing trees removed. Professional, experienced, fearless and affordable!"
+				</p>
+
+				<p class="float-right text-black mb-2">- Brenda B</p>
+				<br>
+				<center><a href="/reviewspage">see more</a></center>
+				
+				
+			</div>
+
+			<!-- <div class="mx-auto block box-content h-32 w-9/12 p-4 border-4 mb-5 rounded-lg bg-sky-600">
+				<p>this is a review</p>
+			</div> -->
+		</ul>
+
+
+		<ul role="list" class="link-card-grid">
+			<Card
+				href="/chat"
+				title="Chat"
+				body="Come chat with use, we would  ❤️  to hear about your new project."
+			/>
+			<Card
+				href="/payments"
+				title="Payments"
+				body="Make a payment."
+			/>
+		</ul>
+	</main>
+</Layout>
+
+<style>
+	:root {
+		--astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
+	}
+
+	h1 {
+		margin: 2rem 0;
+	}
+
+	main {
+		margin: auto;
+		padding: 1em;
+		max-width: 90ch;
+	}
+
+	.text-gradient {
+		font-weight: 900;
+		background-image: var(--astro-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 100% 200%;
+		background-position-y: 100%;
+		border-radius: 0.4rem;
+		animation: pulse 4s ease-in-out infinite;
+	}
+
+	@keyframes pulse {
+		0%,
+		100% {
+			background-position-y: 0%;
+		}
+		50% {
+			background-position-y: 80%;
+		}
+	}
+
+	/* .instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		background: #4f39fa;
+		padding: 1rem;
+		border-radius: 0.4rem;
+		color: var(--color-bg);
+	} */
+
+	/* .instructions code {
+		font-size: 0.875em;
+		border: 0.1em solid var(--color-border);
+		border-radius: 4px;
+		padding: 0.15em 0.25em;
+	} */
+
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding-bottom: 20px;
+	}
+</style>

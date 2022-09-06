@@ -1,0 +1,79 @@
+---
+import Layout from '../layouts/Layout.astro';
+import BackArrow from '../components/BackArrow.astro';
+---
+
+<Layout title="AlphaTree">
+	<main>
+		<BackArrow href="/" />
+        <center><h1><span class="text-gradient">360 516 8933</span></h1></center>
+
+        <form class="mx-auto" action="" method="get">
+
+            <center><label for="fname">Name:</label></center>
+            <center><input class="input[type='text'] bg-lime-300 rounded-lg w-9/12" type="text" id="fname" name="fname"></center><br><br>
+            
+            <center><label for="lname">Address:</label></center>
+            <center><input class="input[type='text'] bg-lime-300 rounded-lg w-9/12" type="text" id="lname" name="lname"></center><br><br>
+
+			<center><label for="lname">City:</label></center>
+            <center><input class="input[type='text'] bg-lime-300 rounded-lg w-9/12" type="text" id="lname" name="lname"></center><br><br>
+
+			<center><label for="lname">Telephone:</label></center>
+            <center><input class="input[type='text'] bg-lime-300 rounded-lg w-9/12" type="text" id="lname" name="lname"></center><br><br>
+
+			<center><label for="lname">Email:</label></center>
+            <center><input class="input[type='text'] bg-lime-300 rounded-lg w-9/12" type="text" id="lname" name="lname"></center><br><br>
+
+			<center><label for="lname">Date Of Service:</label></center>
+            <center><input class="input[type='text'] bg-lime-300 rounded-lg w-9/12" type="text" id="lname" name="lname"></center><br><br>
+
+            <center><label for="lname">Describe The Problem:</label></center>
+            <center><input class="textarea bg-lime-300 h-44 rounded-lg w-9/12" id="lname" name="lname"></center><br><br>
+            
+        </form> 
+
+		<center>
+			<button class="bg-lime-300 h-14 w-44 text-black rounded-lg" type="button">Select Pic To Upload</button>
+			<button class="bg-lime-300 h-14 w-1/2 text-black rounded-lg" type="button">Submit</button>
+		</center>
+	</main>
+</Layout>
+
+<style>
+	:root {
+		--astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
+	}
+
+	h1 {
+		margin: 2rem 0;
+	}
+
+	main {
+		margin: auto;
+		padding: 1em;
+		max-width: 90ch;
+	}
+
+	.text-gradient {
+		font-weight: 900;
+		background-image: var(--astro-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 100% 200%;
+		background-position-y: 100%;
+		border-radius: 0.4rem;
+		animation: pulse 4s ease-in-out infinite;
+	}
+
+	@keyframes pulse {
+		0%,
+		100% {
+			background-position-y: 0%;
+		}
+		50% {
+			background-position-y: 80%;
+		}
+	}
+</style>
+		
