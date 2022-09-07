@@ -1,7 +1,20 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import BackArrow from '../../components/BackArrow.astro';
+const BigCedarTreeRemoval = 'https://alphatreeio.xyz/images/webp/BigCedarTreeRemoval.webp';
+const BigTreeTopRemoval = 'https://alphatreeio.xyz/images/webp/BigTreeTopRemoval.webp';
+const DouglasFirRemoval = "https://alphatreeio.xyz/images/webp/DouglasFirRemoval.webp";
+const DyingWhitePineRemoval = "https://alphatreeio.xyz/images/webp/DyingWhitePineRemoval.webp";
+const JustGettingStarted = "https://alphatreeio.xyz/images/webp/JustGettingStarted.webp";
+const MakeItSnow = "https://alphatreeio.xyz/images/webp/MakeItSnow.webp";
+const SnowBoundHemlock = "https://alphatreeio.xyz/images/webp/SnowBoundHemlock.webp";
+const TightSpaces = "https://alphatreeio.xyz/images/webp/tight_spaces.webp";
+const WeCutTrees = "https://alphatreeio.xyz/images/webp/we_cut_trees.webp";
+const WindDamagedCedar = "https://alphatreeio.xyz/images/webp/WindDamagedCedar.webp";
+import VidCard from '../../components/VidCard.astro';
 ---
+
+<!-- https://img.youtube.com/vi/IZQymhYK59k/maxresdefault.jpg -->
 
 <Layout title="AlphaTree">
 	<main>
@@ -10,8 +23,18 @@ import BackArrow from '../../components/BackArrow.astro';
 			<h1><span class="text-gradient">360 516 8933</span></h1>
 		</center>
 
-		<p>Thi is the photo gallery page</p>
-		
+		<div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 gap-2.5">
+			<VidCard link="/vid/bigcedartreeremovalpage" src={BigCedarTreeRemoval} vidtext="Big Cedar Tree Removal" />
+			<VidCard link="/vid/bigtreetopremovalpage" src={BigTreeTopRemoval} vidtext="Big Tree Top Removal" />
+			<VidCard link="/vid/douglasfirremovalpage" src={DouglasFirRemoval} vidtext="Douglas Fir Removal" />
+			<VidCard link="/vid/dyingwhitepineremovalpage" src={DyingWhitePineRemoval} vidtext="Dying White Pine Removal" />
+			<VidCard link="/vid/justgettingstartedpage" src={JustGettingStarted} vidtext="Just Getting Started" />
+			<VidCard link="/vid/makeitsnowpage" src={MakeItSnow} vidtext="Make It Snow" />
+			<VidCard link="/vid/snowboundhemlockpage" src={SnowBoundHemlock} vidtext="Snow Bound Hemlock" />
+			<VidCard link="/vid/wecuttreespage"  src={WeCutTrees} vidtext="We Cut Trees" />
+			<VidCard link="/vid/winddamagedcedarpage" src={WindDamagedCedar} vidtext="Wind Damaged Cedar" />
+			<VidCard link="/vid/tightspacespage" src={TightSpaces} vidtext="Tight Spaces" />
+		</div>
 	</main>
 </Layout>
 
