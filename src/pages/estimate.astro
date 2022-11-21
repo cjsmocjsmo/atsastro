@@ -6,36 +6,67 @@ import BackArrow from '../components/BackArrow.astro';
 <Layout title="AlphaTree">
 	<main>
 		<BackArrow href="/" />
-        <center><h1><span class="text-gradient">360 516 8933</span></h1></center>
+        <!-- <center><h1><span class="text-gradient">360 516 8933</span></h1></center> -->
+
+		<center><p class="mt-5">Thank you for choosing AlphaTree Service.</p></center>
+		<center><p class="mb-5"> Please provide your contact information.</p></center>
 
         <form class="mx-auto" action="" method="get">
-
-            <center><label for="fname">Name:</label></center>
-            <center><input class="input[type='text'] bg-lime-300 rounded-lg w-9/12" type="text" id="fname" name="fname"></center><br><br>
+            <center><label for="name">Name:</label></center>
+            <input class="text-black input[type='text'] bg-cyan-400 rounded-lg w-full" type="text" id="name" name="name">
             
-            <center><label for="lname">Address:</label></center>
-            <center><input class="input[type='text'] bg-lime-300 rounded-lg w-9/12" type="text" id="lname" name="lname"></center><br><br>
+			<div class="flex flex-row">
+				<div class="basis-1/2 pr-1" >
+					<div class="flex flex-col">
+						<label for="address">Address:</label>
+						<input class="text-black input[type='text'] bg-cyan-400 rounded-lg w-full" type="text" id="address" name="address">
+					</div>
+				</div>
 
-			<center><label for="lname">City:</label></center>
-            <center><input class="input[type='text'] bg-lime-300 rounded-lg w-9/12" type="text" id="lname" name="lname"></center><br><br>
+				<div class="basis-1/2 pr-1" >
+					<div class="flex flex-col">
+						<label for="city">City:</label>
+						<input class="text-black input[type='text'] bg-cyan-400 rounded-lg w-full" type="text" id="city" name="city">
+					</div>
+				</div>
+			</div>
 
-			<center><label for="lname">Telephone:</label></center>
-            <center><input class="input[type='text'] bg-lime-300 rounded-lg w-9/12" type="text" id="lname" name="lname"></center><br><br>
 
-			<center><label for="lname">Email:</label></center>
-            <center><input class="input[type='text'] bg-lime-300 rounded-lg w-9/12" type="text" id="lname" name="lname"></center><br><br>
 
-			<center><label for="lname">Date Of Service:</label></center>
-            <center><input class="input[type='text'] bg-lime-300 rounded-lg w-9/12" type="text" id="lname" name="lname"></center><br><br>
+			<div class="flex flex-row">
+				<div class="basis-1/2 pr-1" >
+					<div class="flex flex-col">
+						<label for="telephone">Telephone:</label>
+						<input class="text-black input[type='tel'] bg-cyan-400 rounded-lg w-full" type="tel" id="telephone" name="telephone">
+					</div>
+					
+				</div>
+				<div class="basis-1/2 pl-1">
+					<div class="flex flex-col">
+						<label for="email">Email:</label>
+						<input class="text-black input[type='email'] bg-cyan-400 rounded-lg w-full" type="email" id="email" name="email">
+					</div>
+					
+				</div>
+			</div>
+		<!-- </form>  -->
 
-            <center><label for="lname">Describe The Problem:</label></center>
-            <center><input class="textarea bg-lime-300 h-44 rounded-lg w-9/12" id="lname" name="lname"></center><br><br>
+		<!-- <center><p>Thank you for choosing AlphaTree Service. Please provide your contact information.</p></center> -->
+
+		<!-- <form class="mx-auto" action="" method="get"> -->
+			<center><label for="date">Date Of Service:</label></center>
+            <center><input class="text-black bg-cyan-400 rounded-lg w-full" type='date' id="date" name="date"></center>
+
+            <center><label for="problem">Describe The Problem:</label></center>
+            <center><input class="textarea text-black bg-cyan-400 h-44 rounded-lg w-full" id="problem" name="problem"></center><br><br>
             
-        </form> 
+			<center><label for="inputfile">Select A Pic/Vid To Upload</label></center>
+			<center><input class="mt-4 mb-5 text-black bg-cyan-400" type="file" id="inputfile" /></center>
+        
+		</form> 
 
 		<center>
-			<button class="bg-lime-300 h-14 w-44 text-black rounded-lg" type="button">Select Pic To Upload</button>
-			<button class="bg-lime-300 h-14 w-1/2 text-black rounded-lg" type="button">Submit</button>
+			<div><button class="mt-5 mb-5 bg-cyan-400 h-14 w-1/2 text-black rounded-lg" type="button">Submit</button></div>
 		</center>
 	</main>
 </Layout>

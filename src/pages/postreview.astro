@@ -11,23 +11,28 @@ import BackArrow from '../components/BackArrow.astro';
         <form class="mx-auto" action="" method="get">
 
             <center><label for="fname">Name:</label></center>
-            <center><input class="input[type='text'] bg-lime-300 rounded-lg w-9/12" type="text" id="fname" name="fname"></center><br><br>
+            <center><input class="input[type='text'] text-black bg-cyan-500 rounded-lg w-9/12" type="text" id="fname" name="fname"></center><br><br>
             
             <center><label for="lname">Email:</label></center>
-            <center><input class="input[type='text'] bg-lime-300 rounded-lg w-9/12" type="text" id="lname" name="lname"></center><br><br>
+            <center><input class="input[type='text'] text-black bg-cyan-500 rounded-lg w-9/12" type="text" id="lname" name="lname"></center><br><br>
 
             <center><label for="lname">Review:</label></center>
-            <center><input class="textarea bg-lime-300 h-36 rounded-lg w-9/12" id="lname" name="lname"></center><br><br>
+            <center><input class="textarea text-black bg-cyan-500 h-36 rounded-lg w-9/12" id="lname" name="lname"></center><br><br>
 
-            <center><button class="bg-lime-300 h-14 w-44 text-black rounded-lg" type="button">Submit</button></center>
+			<!-- <input type="file" id="inputfile"/> -->
+            <center><button class="bg-cyan-400 h-14 w-44 text-black rounded-lg" type="button">Submit</button></center>
 
           </form> 
 	</main>
 </Layout>
 
 <style>
-	:root {
+	/* :root {
 		--astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
+	} */
+
+	:root {
+		--astro-gradient: linear-gradient(180deg, #4f39fa, white);
 	}
 
 	h1 {

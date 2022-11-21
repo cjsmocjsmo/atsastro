@@ -1,7 +1,10 @@
 ---
+    import { Image } from '@astrojs/image/components';
     const {pic} = Astro.props;
 ---
 
 <div>
-    <img class="rounded-lg" src={pic} alt="AlphaTree Image"/>
+    <center><Image width="800" aspectRatio="16:9" class="mt-10 border-2 border-black rounded-lg" src={pic} alt="AlphaTree Service"/></center>
+    
+    <!-- <img class="rounded-lg" src={pic} alt="AlphaTree Image"/> -->
 </div>

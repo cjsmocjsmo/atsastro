@@ -1,7 +1,8 @@
 ---
-import { Image } from '@astrojs/image/components';
+import { Image, Picture } from '@astrojs/image/components';
 import banner from '/src/images/curt2.webp';
 ---
 
 <Image aspectRatio="16:9" class="border-2 border-black rounded-lg" src={banner} alt="AlphaTree Service"/>
 
+<!-- <Picture aspectRatio="16:9" src={banner} widths={[200, 400, 800]} sizes="(max-width: 800px) 100vw, 800px" alt="descriptive text" /> -->
