@@ -1,10 +1,24 @@
 ---
     import { Image } from '@astrojs/image/components';
-    const {pic} = Astro.props;
+    const {pic, cat} = Astro.props;
+
+    let lands = true;
+    if (cat === "land"){
+        lands = true;
+    } else {
+        lands = false;
+    }
 ---
 
 <div>
+    {
+    lands
+    ?
     <center><Image width="800" aspectRatio="16:9" class="mt-10 border-2 border-black rounded-lg" src={pic} alt="AlphaTree Service"/></center>
+    :
+    <center><Image width="550" aspectRatio="9/16" class="mt-10 border-2 border-black rounded-lg" src={pic} alt="AlphaTree Service"/></center>
+    }
+    
     
     <!-- <img class="rounded-lg" src={pic} alt="AlphaTree Image"/> -->
 </div>
